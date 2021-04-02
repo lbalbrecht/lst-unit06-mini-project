@@ -30,8 +30,8 @@ function displayArticles(data) {
     console.log(data.results.length);
   for (let i = 0; i < data.results.length; i++) {
     articleTitle = data.results[i].title; 
-    console.log(articleTitle);
-    console.log(articleAuthors);
+    //console.log(articleTitle);
+    //console.log(articleAuthors);
     articleDate = data.results[i].date;
     articleSubject = data.results[0].subject.join(", ");
     articleDescription = data.results[0].description[0];
@@ -41,7 +41,7 @@ function displayArticles(data) {
 
 formSubmitHandler("constitution");
 
-searchButton.addEventListener(
-  "submit",
-  formSubmitHandler(searchTerm, searchFormat)
-);
+// searchButton.addEventListener(
+//   "submit",
+//   formSubmitHandler(searchTerm, searchFormat)
+// );
